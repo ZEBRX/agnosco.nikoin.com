@@ -1,127 +1,368 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en" data-cookies-popup="true">
 <head>
-  <meta charset="UTF-8">
-  <title>Hole</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      html, body {
-  overflow: hidden;
-  background: #111;
-}
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-.hole {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-}
+<!-- Title -->
+<title>AGNOSCO - A NIKOIN FUND</title>
 
-i {
-  display: block;
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  left: -70px;
-  top: -70px;
-  border-radius: 140px;
-  opacity: 0;
-  animation-name: scale;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+<!-- Favicons -->
+<link rel="shortcut icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-i:nth-child(1) {
-  animation-delay: 0.3s;
-}
 
-i:nth-child(2) {
-  animation-delay: 0.6s;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-i:nth-child(3) {
-  animation-delay: 0.9s;
-}
+    <!-- Google Web Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700' rel='stylesheet' type='text/css'>
 
-i:nth-child(4) {
-  animation-delay: 1.2s;
-}
+<!-- CSS Styles -->
+<link rel="stylesheet" href="assets/css/styles.css" />
+	<link rel="stylesheet" href="assets/css/agnosco.css"/>
 
-i:nth-child(5) {
-  animation-delay: 1.5s;
-}
 
-i:nth-child(6) {
-  animation-delay: 1.8s;
-}
-
-i:nth-child(7) {
-  animation-delay: 2.1s;
-}
-
-i:nth-child(8) {
-  animation-delay: 2.4s;
-}
-
-i:nth-child(9) {
-  animation-delay: 2.7s;
-}
-
-i:nth-child(10) {
-  animation-delay: 3s;
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(2);
-    opacity: 0;
-    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
-  }
-  50% {
-    transform: scale(1) translate(0px, -5px);
-    opacity: 1;
-    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    transform: scale(0.1) translate(0px, 5px);
-    opacity: 0;
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
-  }
-}
-
-    </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<!-- CSS Base -->
+<link id="theme" rel="stylesheet" href="assets/css/themes/theme-bottle.css" />
 
 </head>
 
-<body>
+<body class="one-page header-absolute">
 
-  <div class='hole'>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
+<!-- Loader -->
+<div id="page-loader"><svg class="loader-2 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
+<!-- Loader / End -->
+
+<!-- Header -->
+<header id="header" class="absolute light">
+	
+	<!-- Navigation Bar -->
+	<div id="nav-bar">
+
+		<div class="container">
+			<!-- Logo -->
+			<a class="logo-wrapper"  href="index.html">
+				<img class="logo logo-dark" src="assets/add/agnosco-logo.png">
+				<img class="logo logo-light" style="left:10px;" src="assets/add/AGNOSCO-WM-BLACK.png" alt="AGNOSCO.">
+			</a>
+
+			<nav class="module-group right">
+
+				<!-- Primary Menu -->
+				<div class="module menu left">
+					<ul id="nav-primary" class="nav nav-primary">
+						<li><a href="#home">AGNOSCO</a></li>
+						<li><a href="http://www.nikoin.com" target="_blank">NIKOIN</a></li>
+						<li><a href="#services">THE FUND</a></li>
+						<li><a href="#chart">GROWTH</a></li>
+						<li><a href="#contact" style="color: white"><span style="background-color: #3c763d;"onclick="document.getElementById('id01').style.display='block'">&nbsp;INVEST NOW&nbsp;</span></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Menu Toggle -->
+			<div class="menu-toggle">
+				<a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+<!-- Header / End -->
+
+<!-- Content -->
+<div id="content">
+
+	<!-- Section / Slideshow -->
+	<section id="home" style="position:relative;top:20px;" class="fullheight dark bg-primary">
+
+		<div class="bg-image bg-multiply"><img src="assets/add/background-agnosco-gradient.jpg" alt=""></div>
+
+		<div class="container v-center text-center">
+			<div class="row">
+				<div class="col-lg-8 col-lg-push-2">
+					<div class="carousel animated" data-animation="fadeIn" data-single-item="true" data-autoplay="4000" data-transition="fade" data-pagination="false">
+						<div class="slide">
+							<h1>We will take care about your <strong>investments</strong>!</h1>
+							<h5 class="mb-40 text-muted">Investing at the right time, in the right thing...</h5>
+						</div>
+						<div class="slide">
+							<h1>We will take care about your <strong>future</strong>!</h1>
+							<h5 class="mb-40 text-muted">Systematic Return Plan, for secure returns...</h5>
+						</div>
+						<div class="slide">
+							<h1><strong>AGNOSCO.</strong></h1>
+							<h1>Appreciation . Trust . Transparency</h1>
+						</div>
+					</div>
+					<div class="row" data-target="local-scroll">
+						<div class="col-sm-6">
+							<a href="#" class="btn btn-filled btn-white btn-block" onclick="document.getElementById('id01').style.display='block'">INVEST NOW<i class="i-after ti-cup"></i></a>
+						</div>
+						<div class="col-sm-6">
+							<a href="#chart" class="btn btn-link btn-block">OUR GROWTH<i class="i-after ti-stats-up"></i></a>
+						</div>
+					</div>
+					<div class="row"><h4><br><br><br><br><br><br>Agnosco is India's first cryptocurrency and cryptoassets focused investment fund.</h4></div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- Section / About -->
+	<section id="about">
+		<div class="container">
+			<div class="row v-center-items">
+				<div class="col-md-5">
+					<h5 class="mb-40">AGNOSCO.</h5>
+					<h3>We mean to appreciate value!</h3>
+					<p class="lead">Agnosco is a Nikoin fund. Agnosco is actively working on appreciating this fund, by trading and investing the gains.</p>
+					<p>Agnosco is India’s first cryptocurrency & cryptoassets focused investment fund, which is exclusively being capitalising and investing in blockchain-oriented startups and cryptocurrencies.</p>
+				</div>
+				<div class="col-md-6 col-md-push-1" style="position: relative;top:20px;" >
+					<div class="col-md-6"><img src="assets/img/photos/finance_photo01.jpg" alt="" class="animated" data-animation="fadeInLeft"></div>
+					<div class="col-md-6 mt-120 col-sm-pull-2"><img src="assets/img/photos/finance_photo02.jpg" alt="" class="animated" data-animation="fadeInRight"></div>
+				</div>
+			</div>
+		</div>
+		<a id="services"></a>
+	</section>
+
+	<!-- Section / Services -->
+	<section class="bg-grey">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-8 col-lg-push-2">
+					<h3 class="text-center">What we do</h3>
+					<p class="text-center lead mb-60">Investment Philosophy</p>
+					<!-- Accordion -->
+					<div class="panel-group" role="tablist" aria-multiselectable="true">
+						<!-- Panel -->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#collapseOne" aria-expanded="false">Bottom-up fundamental research and valuations – the core of our philosophy</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">
+									We seek to identify assets whose prices differ materially from our estimate of intrinsic value, based on through-the-cycle, normalised cash flows and earnings, and where we think that there is a catalyst for the asset’s price to revert to our estimate of intrinsic value over the medium term. However, when using a valuation-driven asset picking process, we acknowledge the risk of investing in so-called value traps and seek to mitigate this risk by focusing on catalysts, downside risk, technology behind, value proposition and development team, and taking all of these factors into account when considering portfolio construction.</div>
+							</div>
+						</div>
+						<!-- Panel -->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#collapseTwo" aria-expanded="false">Top-down views – an important overlay</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">Identifying and taking advantage of economic cycles and market trends is an important contributor to the generation of superior long term and short term investment returns, and is complementary to bottom-up research. However, cycles and trends are often unpredictable and are subject to change. Therefore the risk of being wrong must be acknowledged and managed.</div>
+							</div>
+						</div>
+						<!-- Panel -->
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#collapseThree" aria-expanded="false">Trading – a part of both bottom-up and top-down research</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+								<div class="panel-body">The market is right most of the time, but regular inefficiencies arise in the short term. Shorter term inefficiencies may present trading opportunities, irrespective of a asset’s intrinsic value. These opportunities often arise due to large flows of capital, news flow and emotions, structural inefficiencies, development actions, and other special situations or events.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="chart"></a>
+
+		</div>
+	</section>
+	<!-- Section / Clients -->
+	<section id="clients" class="dark bg-primary">
+
+		<div class="container">
+			<div id="highcharts-HJFSUnuvf"><script src="https://cloud.highcharts.com/inject/HJFSUnuvf/" defer="defer"></script></div>
+		</div>
+
+	</section>
+
+	<!-- Section / Contact -->
+
 </div>
-  
-  
+<!-- Content / End -->
 
-    <script  src="js/index.js"></script>
+<!-- Footer -->
+<footer id="footer" class="dark bg-secondary border-top" style=" height: 25px;padding:0px;">
+    
+
+
+            <div class="nav-module menu-module col-sm-12  " style="text-align: center; background-color:inherit;width: 100%; font-size: 20px;padding-bottom: 10px;padding-top:10px;" id="socialNav">
+                <div class="flex-container" id="socialicons" style="background-color:inherit;text-align: center;">
+                    <div  style="margin-left: 12px;">
+                        <a href="https://twitter.com/teamnikoin" target="_blank"><i  class="fab fa-twitter"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="https://www.facebook.com/teamnikoin" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="https://www.instagram.com/teamnikoin/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="https://medium.com/@teamnikoin" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="https://t.me/teamnikoin" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="https://nikoin.slack.com/" target="_blank"><i class="fab fa-slack-hash"></i></a>
+                    </div>
+                    <div style="margin-left: 12px;">
+                        <a href="launch.html"><i class="fab fa-bitcoin"></i></a>
+                    </div>
+                </div>
+            </div>
+	<div class="col-sm-12 dark text-muted  pull-left" style="background-color: inherit;width:100%;text-align: center;">
+		Copyright AGNOSCO 2018©. All rights reserved.
+
+	</div>
+
+</footer>
+<!-- Footer / End -->
+
+<!-- Modal -->
+
+<div class="modal modal-bottom fade" id="modalBottom" role="dialog" data-backdrop="false">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body text-center"><span class="icon icon-xs icon-primary"><i class="ti-receipt"></i></span>Agnosco does not solicit any investments. <a href="#" class="btn btn-primary btn-filled btn-xs">More info</a></div>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ti-close"></i></button>
+		</div>
+	</div>
+</div>
+<div id="id01" class="modal " >
+
+	<form class="modal-content animate deskhr " id="deskhr1">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="position :relative;top:0; right:10px;" >&times;</span>
+		<div class="imgcontainer" style="margin:20px; margin-right: 25px;" >
+			<h5 style="margin-bottom:0px;padding-top:20px;text-align: center; margin-right:30px;  ">Get yourself white-labelled for NIKOIN ICO</h5>
+			<hr style="margin:15px;">
+		</div>
+
+		<div  class="modal-reg"  style="margin:auto ;padding: 0; max-width: 100vw;">
+			<div class="group" style="margin-left: auto;margin-right: auto">
+				<input type="email" id="moData1"placeholder="Enter Email" style="box-shadow: none; margin:auto;" required>
+				<span class="highlight" style="margin:auto;"></span>
+				<span class="bar" style="margin:auto;"></span>
+			</div>
+			<label for="moData1" id="moData1-error" class="error"  style="font-size:15px!important;color: #000; position: relative;margin:auto!important;"></label>
+			<label for="moData1" id="moData1c-error"  style="font-size:15px!important;color: #000; position: relative;margin:auto!important;"></label>
+			<div style="margin-left: auto; margin-right: auto;width: 100%;"><button type="submit" class="modsub " style="position:relative;left:25%;background:#000; max-width: 50%;width:50% ;margin-bottom:10px; font-size: 20px;border-radius:100px; text-align:center; color:#FFFFFF">Submit</button>
+			</div>
+		</div>
 
 
 
+	</form>
+
+
+
+
+
+	<form class="modal-content animate mobonly " id="mobonly1"   style="width: 100vw;position: relative;top: 20vh;">
+
+		<span onclick="document.getElementById('id01').style.display='none'" class="close " title="Close Modal" style="position :relative;top:0; right:10px;margin:10px;" >&times;</span>
+
+		<div class="imgcontainer" style="text-align:center;margin-bottom: 10px;margin-top:15px;margin-right: 38px;" >
+			<h5 style="margin-bottom:0px;padding-top:20px;margin-right: 25px;text-align: center;">Get yourself white-labelled for <br> NIKOIN ICO</h5>
+			<hr style="margin-top:15px;margin-bottom:5px;">
+		</div>
+
+		<div  class=" modal_reg"  style="margin: 0;margin-top:20px;padding: 0; max-width: 100vw;">
+			<div class="group" style="position:relative;margin-left: auto !important;margin-right: auto !important; ">
+				<input type="email" id="moData2" style="box-shadow: none;width:100% !important;margin: auto!important;position:relative;left:20px!important;text-align: center;" required>
+				<span class="highlight"></span>
+				<span class="bar"></span>
+				<label>Email ID</label>
+			</div>
+			<label for="moData2" id="moData2-error" class="error"  style="font-size:15px!important;color: #000;position: relative;margin-left: auto!important;margin-right:auto!important; " ></label>
+			<label for="moData2" id="moData2c-error" style="font-size:15px!important;color: #000;position: relative;margin:auto!important;" ></label>
+
+			<button type="submit" class="modsub " style="position:relative;left:20%;max-width: 50%;width:50%;margin-right:auto!important;margin-left:auto!important;text-align:center;background:#000; margin-bottom:10px;font-size:15px;border-radius:100px;">Submit</button>
+
+		</div>
+
+	</form>
+
+</div>
+<div id="id03" class="modal" >
+
+	<form class="modal-content animate deskhr " id="deskhr1s" style="max-width: 500px; margin:auto auto; vertical-align: middle;position:relative;top:40vh;">
+		<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="position :relative;top:0; right:10px;z-index: 10;" >&times;</span>
+		<div  class="flex-container modal_reg"  style="margin-right:50px ;padding: 0; max-width: 100vw;">
+			<label id="success-divd" style="font-size:15px;color: #000;font-family:inherit;position: relative;padding: 30px; margin-bottom: 10px;" ></label>
+		</div>
+
+	</form>
+	<form class="modal-content  animate mobonly " id="mobonly1s" style="max-width: 500px;">
+		<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="position :relative;top:0px; right:10px;z-index: 10;" >&times;</span>
+		<div  class="flex-container modal_reg"  style="margin-right: 50px;padding: 0; max-width: 100vw;">
+			<label id="success-div" style="font-size:15px;font-family:inherit;color: #000;position: relative;margin:30px;padding:30px;margin-bottom: 10px;" ></label>
+
+		</div>
+
+	</form>
+
+</div>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+<!-- JS Libraries -->
+<script src="assets/js/jquery-1.12.3.min.js"></script>
+
+<!-- JS Plugins -->
+<script src="assets/js/plugins.js"></script>
+
+<!-- JS Core -->
+
+<script src="assets/js/core.js"></script>
+
+<script src="backnm.js"></script>
+
+
+<!-- JS Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
 </body>
 
